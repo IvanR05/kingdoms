@@ -6,7 +6,7 @@ import org.qascadia.entities.Kingdom;
 import org.qascadia.events.kingdoms.KingdomCreate;
 import org.qascadia.events.kingdoms.KingdomRemove;
 
-public class KingdomControler {
+public class KingdomController {
   public void createKingdom(String kingdomName, King king) {
     Kingdom kingdom = new Kingdom(kingdomName, king);
 

@@ -4,6 +4,8 @@ import org.bukkit.plugin.java.JavaPlugin;
 import org.qascadia.commands.Balance;
 import org.qascadia.events.DeathEvent;
 import org.qascadia.events.JoinEvent;
+import org.qascadia.events.KingdomCreateEvent;
+import org.qascadia.events.KingdomRemoveEvent;
 import org.qascadia.util.Console;
 
 public class Main extends JavaPlugin {
@@ -16,6 +18,8 @@ public class Main extends JavaPlugin {
     // Events
     getServer().getPluginManager().registerEvents(new DeathEvent(), this);
     getServer().getPluginManager().registerEvents(new JoinEvent(), this);
+    getServer().getPluginManager().registerEvents(new KingdomCreateEvent(), this);
+    getServer().getPluginManager().registerEvents(new KingdomRemoveEvent(), this);
 
     // Commands
     getCommand("balance").setExecutor(new Balance());
