@@ -1,9 +1,0 @@
-name: kingdoms
-main: org.qascadia.kingdoms.Main
-version: 1.0-SNAPSHOT
-author: Qascadia
-description: Kingdoms plugin
-api-version: 1.15
-commands:
-  balance:
-    aliases: ['bal', 'coins', 'money', 'wallet']

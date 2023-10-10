@@ -1,7 +1,7 @@
 package org.qascadia;
 
 import org.bukkit.plugin.java.JavaPlugin;
-import org.qascadia.commands.Balance;
+import org.qascadia.commands.Gamemode;
 import org.qascadia.events.DeathEvent;
 import org.qascadia.events.JoinEvent;
 import org.qascadia.events.KingdomCreateEvent;
@@ -22,7 +22,7 @@ public class Main extends JavaPlugin {
     getServer().getPluginManager().registerEvents(new KingdomRemoveEvent(), this);
 
     // Commands
-    getCommand("balance").setExecutor(new Balance());
+    getCommand("balance").setExecutor(new Gamemode());
   }
 
   public void onDisable() {
