@@ -14,7 +14,7 @@ public class JoinEvent implements Listener {
 
     Player player = event.getPlayer();
 
-    if (player.hasPermission("kingdoms.join")) {
+    if (player.hasPermission("kingdoms.join") || player.isOp()) {
       Bukkit.getServer().broadcastMessage(Formatter.colour("&c❱&e❱&6❱ &d" + event.getPlayer().getName() + " has joined the server!"));
     }
   }

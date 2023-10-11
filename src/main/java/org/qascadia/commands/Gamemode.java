@@ -15,7 +15,7 @@ public class Gamemode implements CommandExecutor {
         if (sender instanceof Player) {
             Player player = (Player) sender;
             gamemodeSwitcher(args[0], player);
-            player.sendMessage(Formatter.colour("&aYour gamemode changed to &2" + args[0].toLowerCase() + "&a."));
+            player.sendMessage(Formatter.colour("&aYour gamemode changed to &2" + player.getGameMode().toString().toLowerCase() + "&a."));
 
             return true;
         }

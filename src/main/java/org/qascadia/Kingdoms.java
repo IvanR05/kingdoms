@@ -2,6 +2,7 @@ package org.qascadia;
 
 import org.bukkit.plugin.java.JavaPlugin;
 import org.qascadia.commands.Gamemode;
+import org.qascadia.commands.KingdomCmd;
 import org.qascadia.events.DeathEvent;
 import org.qascadia.events.JoinEvent;
 import org.qascadia.events.KingdomCreateEvent;
@@ -23,6 +24,7 @@ public class Kingdoms extends JavaPlugin {
 
     // Commands
     getCommand("gamemode").setExecutor(new Gamemode());
+    getCommand("kingdom").setExecutor(new KingdomCmd());
   }
 
   public void onDisable() {

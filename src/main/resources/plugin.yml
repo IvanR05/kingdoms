@@ -7,3 +7,5 @@ api-version: 1.16
 commands:
   gamemode:
     aliases: ['gm', 'mode']
+  kingdom:
+    aliases: ['kg']
