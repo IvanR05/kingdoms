@@ -1,9 +1,9 @@
 name: kingdoms
-main: org.qascadia.kingdoms.Main
+main: org.qascadia.Kingdoms
 version: 1.0-SNAPSHOT
 author: Qascadia
 description: Kingdoms plugin
-api-version: 1.15
+api-version: 1.16
 commands:
-  balance:
-    aliases: ['bal', 'coins', 'money', 'wallet']
+  gamemode:
+    aliases: ['gm', 'mode']

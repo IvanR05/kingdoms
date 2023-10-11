@@ -8,8 +8,8 @@ import org.qascadia.events.KingdomCreateEvent;
 import org.qascadia.events.KingdomRemoveEvent;
 import org.qascadia.util.Console;
 
-public class Main extends JavaPlugin {
-  private Main Instance;
+public class Kingdoms extends JavaPlugin {
+  private static Kingdoms Instance;
 
   public void onEnable() {
     Instance = this;
@@ -22,14 +22,14 @@ public class Main extends JavaPlugin {
     getServer().getPluginManager().registerEvents(new KingdomRemoveEvent(), this);
 
     // Commands
-    getCommand("balance").setExecutor(new Gamemode());
+    getCommand("gamemode").setExecutor(new Gamemode());
   }
 
   public void onDisable() {
     Console.log("&cPlugin disabled!");
   }
 
-  public Main getInstance() {
+  public static Kingdoms getInstance() {
     return Instance;
   }
 }
