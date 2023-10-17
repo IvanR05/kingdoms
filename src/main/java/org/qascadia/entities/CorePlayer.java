@@ -3,9 +3,9 @@ package org.qascadia.entities;
 import java.util.UUID;
 
 public class CorePlayer {
-  private final UUID uuid;
-  private Kingdom kingdom;
-  private float balance;
+  protected UUID uuid;
+  protected Kingdom kingdom;
+  protected float balance;
 
   public CorePlayer(UUID uuid) {
     this.uuid = uuid;
